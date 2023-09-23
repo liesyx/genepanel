@@ -7,7 +7,7 @@
   <br>
 </h1>
 
-<h4 align="center">A minimal Markdown Editor desktop app built on top of <a href="http://electron.atom.io" target="_blank">Electron</a>.</h4>
+<h4 align="center">A web build with nextflow <a href="https://www.nextflow.io/" target="_blank">Nextflow</a>.</h4>
 ![image](https://github.com/liesyx/Gene-Panel/assets/63604038/c3907611-2147-47c0-b86a-be1a5dccfb63)
 
 <p align="center">
