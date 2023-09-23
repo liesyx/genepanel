@@ -8,6 +8,7 @@
 </h1>
 
 <h4 align="center">A minimal Markdown Editor desktop app built on top of <a href="http://electron.atom.io" target="_blank">Electron</a>.</h4>
+![image](https://github.com/liesyx/Gene-Panel/assets/63604038/c3907611-2147-47c0-b86a-be1a5dccfb63)
 
 <p align="center">
   <a href="https://badge.fury.io/js/electron-markdownify">
@@ -32,7 +33,7 @@
   <a href="#license">License</a>
 </p>
 
-![screenshot](https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.gif)
+
 
 ## Key Features
 
