@@ -1,6 +1,3 @@
-# Gene Panel alita
-Gene Panel alita
-
 
 <h1 align="center">
   <br>
