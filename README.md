@@ -3,11 +3,11 @@
   <br>
 <!--   <a href="http://www.amitmerchant.com/electron-markdownify"><img src="https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.png" alt="Markdownify" width="200"></a> -->
   <br>
-  Gene Panel alita
+  Gene Panel Atila
   <br>
 </h1>
 
-<h4 align="center">A web for genepanel build with core of <a href="https://www.nextflow.io/" target="_blank">Nextflow</a>.</h4>
+<h4 align="center">A web for GenePanel build with core of <a href="https://www.nextflow.io/" target="_blank">Nextflow</a>.</h4>
 
 
 <p align="center">
@@ -54,13 +54,13 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/amitmerchant1990/electron-markdownify
+$ git clone https://github.com/liesyx/Gene-Panel.git
 
 # Go into the repository
 $ cd electron-markdownify
 
-# Install dependencies
-$ npm install
+# Install docker
+$ install docker File
 
 # Run the app
 $ npm start
