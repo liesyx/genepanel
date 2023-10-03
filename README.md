@@ -3,7 +3,7 @@
   <br>
 <!--   <a href="http://www.amitmerchant.com/electron-markdownify"><img src="https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.png" alt="Markdownify" width="200"></a> -->
   <br>
-  Gene Panel Atila
+  Gene Panel
   <br>
 </h1>
 
@@ -45,20 +45,45 @@
 
 ## How To Use
 
-To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Java](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html) 
 
 ```bash
-# Clone this repository
+
+# Install nextflow
+$ mkdir genepanel
+$ cd genepnel
+$ curl -s https://get.nextflow.io | bash
+$ ./nextflow run hello
+
+
+# Clone this repository dowload annovar database (location gene panel)
 $ git clone https://github.com/liesyx/Gene-Panel.git
+$ export PATH=/data/annovar/annovar:$PATH
+$ perl data/annovar/annovar/annotate_variation.pl -webfrom annovar -downdb avsnp150 -buildver hg38 data/annovar/annovar/humandb
+$ perl data/annovar/annovar/annotate_variation.pl -webfrom annovar -downdb gnomad312_genome -buildver hg38 data/annovar/annovar/humandb
+$ perl data/annovar/annovar/annotate_variation.pl -webfrom annovar -downdb cosmic70 -buildver hg38 data/annovar/annovar/humandb
 
-# Go into the repository
-$ cd electron-markdownify
 
-# Install docker
-$ install docker File
+# build docker imgaes 
+$ docker build -t genepanel:latest .
 
-# Run the app
-$ npm start
+# Run the app (high recomment) (the location of fastqc.nf file )
+$ ./nextflow run fastqc.nf -with-docker genepanel
+
+# website for developer
+$ uvicorn main:app --host 0.0.0.0 --port 8888 --reload
+```
+```bash
+# Parameter
+# -resume
+$ git clone https://github.com/liesyx/Gene-Panel.git
+# -NM_data_
+# -bed_file
+# -ten_du_an 
+# -goitinh
+# -ngaynhanmau
+# -tenkhachang
+# -adapter_dir
 ```
 ## Main Workflow
 <img src="https://github.com/liesyx/Gene-Panel/assets/63604038/51808164-ff59-4245-b588-ca320fcd67a4" alt="Alt text" title="Main Web site">
