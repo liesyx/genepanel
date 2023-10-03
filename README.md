@@ -94,7 +94,7 @@ This software uses the following open source packages:
 
 - [Nextflow](https://www.nextflow.io/)
 - [fastapi](https://fastapi.tiangolo.com/)
-- [Marked - a markdown parser](https://github.com/chjj/marked)
+
 
 
 ## Support
