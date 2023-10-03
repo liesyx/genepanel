@@ -68,7 +68,7 @@ $ perl data/annovar/annovar/annotate_variation.pl -webfrom annovar -downdb cosmi
 $ docker build -t genepanel:latest .
 
 # Run the app (high recomment) (the location of fastqc.nf file )
-$ ./nextflow run fastqc.nf -with-docker genepanel
+$ ./nextflow run fastqc.nf -with-docker gene
 
 # website for developer
 $ uvicorn main:app --host 0.0.0.0 --port 8888 --reload
