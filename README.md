@@ -73,10 +73,10 @@ $ ./nextflow run fastqc.nf -with-docker genepanel
 # website for developer
 $ uvicorn main:app --host 0.0.0.0 --port 8888 --reload
 ```
+## Parameter
 ```bash
 # Parameter
 # -resume
-$ git clone https://github.com/liesyx/Gene-Panel.git
 # -NM_data_
 # -bed_file
 # -ten_du_an 
