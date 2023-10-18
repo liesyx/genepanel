@@ -62,6 +62,11 @@ $ export PATH=/data/annovar/annovar:$PATH
 $ perl data/annovar/annovar/annotate_variation.pl -webfrom annovar -downdb avsnp150 -buildver hg38 data/annovar/annovar/humandb
 $ perl data/annovar/annovar/annotate_variation.pl -webfrom annovar -downdb gnomad312_genome -buildver hg38 data/annovar/annovar/humandb
 $ perl data/annovar/annovar/annotate_variation.pl -webfrom annovar -downdb cosmic70 -buildver hg38 data/annovar/annovar/humandb
+$ perl data/annovar/annovar/annotate_variation.pl -webfrom annovar -downdb refGene -buildver hg38 data/annovar/annovar/humandb
+$ perl data/annovar/annovar/annotate_variation.pl -webfrom annovar -downdb cytoBand -buildver hg38 data/annovar/annovar/humandb
+$ perl data/annovar/annovar/annotate_variation.pl -webfrom annovar -downdb clinvar_20221231 -buildver hg38 data/annovar/annovar/humandb
+$ perl data/annovar/annovar/annotate_variation.pl -webfrom annovar -downdb intervar_20180118 -buildver hg38 data/annovar/annovar/humandb
+$ perl data/annovar/annovar/annotate_variation.pl -webfrom annovar -downdb hrcr1 -buildver hg38 data/annovar/annovar/humandb
 
 
 # build docker imgaes 
